@@ -31,6 +31,22 @@ Antes de executar o projeto, certifique-se de ter os seguintes requisitos instal
        saldo_disponivel DECIMAL(10, 2) NOT NULL
    );
    ```
+## Inserindo novos dados em Recurso
+
+Para inserir novos dados na tabela Recurso, siga as etapas abaixo:
+
+1. Acesse o phpMyAdmin através do seu navegador.
+
+2. Selecione o banco de dados `testecbc`.
+
+3. Navegue até a seção "SQL" no phpMyAdmin.
+
+4. Execute a seguinte consulta SQL para adicionar um novo recurso:
+
+   ```
+   INSERT INTO Recurso (recurso, saldo_disponivel)
+   VALUES ('Nome do Recurso', Valor do Saldo Disponível);
+   ```
 
 ## Configuração da API
 
